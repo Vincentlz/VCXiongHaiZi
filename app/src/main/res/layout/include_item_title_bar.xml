@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    #标题Bar
+
+    @ViewInject(R.id.back)
+    private View mBack; // 返回
+
+    @ViewInject(R.id.tv_title)
+    private TextView mTv_title; // 标题
+
+    @ViewInject(R.id.tv_next)
+    private TextView mTv_next; // 下一步操作(标题右侧按钮)
+
+    # 注入: x.view().inject();
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/head_bg"
+    android:minHeight="@dimen/title_height">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back_fanhui"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_textsize" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:text="Title"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_textsize" />
+
+    <TextView
+        android:id="@+id/tv_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_title_btn"
+        android:padding="10dp"
+        android:text="Next"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_textsize" />
+
+</RelativeLayout>

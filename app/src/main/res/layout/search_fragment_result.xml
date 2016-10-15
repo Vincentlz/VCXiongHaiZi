@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/head_bg">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="搜索"
+            android:textColor="#ffffff"
+            android:textSize="32sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="(88条)"
+            android:textColor="#ffffff"
+            android:textSize="28sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/head_back_normal"
+            android:text="返回"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/segment_normal_1_bg"
+            android:gravity="center"
+            android:text="销量"
+            android:textSize="20sp"
+            android:id="@+id/sales"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/segment_normal_2_bg"
+            android:gravity="center"
+            android:text="价格"
+            android:textSize="20sp"
+            android:id="@+id/price"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/segment_normal_2_bg"
+            android:gravity="center"
+            android:text="好评度"
+            android:textSize="20sp"
+            android:id="@+id/highgood"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/segment_normal_3_bg"
+            android:gravity="center"
+            android:text="上架时间"
+            android:textSize="20sp"
+            android:id="@+id/putawaytime"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/search_product"
+        layout="@layout/search_fragment_result_product"/>
+
+</LinearLayout>

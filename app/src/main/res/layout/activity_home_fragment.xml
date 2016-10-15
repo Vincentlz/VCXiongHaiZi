@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/head_bg_homered" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/fraSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/id_search_bgg">
+
+            <EditText
+                android:id="@+id/et_home_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="#00ffffff"
+                android:hint="请输入搜索关键字"
+                android:minWidth="200.0dip"
+                android:singleLine="true"
+                android:textSize="12sp" />
+
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/drawable_select" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/ho_list"
+        android:layout_width="match_parent"
+        android:divider="@null"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

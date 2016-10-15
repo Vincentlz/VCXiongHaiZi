@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/home_backgroud">
+
+    <RelativeLayout
+        android:id="@id/fraHead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/head_bg">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_fanhui"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/about_us"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fraHead"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100.0dip"
+        android:src="@drawable/about"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80.0dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@id/textVersion"
+            style="@style/style_14_666666_BOLD"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="版本号：熊孩子Android1.0"/>
+
+        <TextView
+            style="@style/style_14_666666_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:text="北京红孩子互联科技有限公司"/>
+
+        <TextView
+            style="@style/style_14_666666_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.0dip"
+            android:text="© 2009-2011"/>
+    </LinearLayout>
+
+   <!-- <include
+        android:id="@id/bottomBar"
+        layout="@layout/activity_main"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_backgroud"
+    android:orientation="vertical">
+
+    <include
+        android:id="@id/relTop"
+        layout="@layout/head_title"></include>
+
+
+    <!--    <RelativeLayout
+            android:id="@+id/rl_address_list_top"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/head_bg">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back_fanhui"
+                android:id="@id/back"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/style_18_BEBEBE_BOLD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:text="分类浏览" />
+
+        </RelativeLayout>-->
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#FFff0000"
+        android:dividerHeight="0dp"
+        >
+
+    </ListView>
+
+</LinearLayout>

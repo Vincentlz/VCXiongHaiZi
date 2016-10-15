@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="55.0dip"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:background="@drawable/btn_item_selector"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="40.0dip"
+        android:layout_height="36.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="10dp" />
+
+
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@id/imgIcon"
+        android:text="孕吗专区"
+        android:textColor="@drawable/listview_item_tvcolorselector"
+        android:textSize="17.0dip" />
+
+    <TextView
+        android:id="@+id/item_describe"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textContent"
+        android:layout_toRightOf="@id/imgIcon"
+        android:text="妈妈专区，滋阴补肾"
+        android:textColor="@drawable/listview_item_tvcolorselector2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:src="@drawable/arrow" />
+
+
+</RelativeLayout>

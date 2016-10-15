@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/home_backgroud">
+
+    <RelativeLayout
+        android:id="@id/fraHead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/head_bg">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_fanhui"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_help_list"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="购物指南"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80.0dip"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_help_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="1、问：在这里购物，能保证我的系统安全吗"
+            android:textSize="17.0sp"/>
+
+        <TextView
+            android:id="@+id/tv_help_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="1、问：在这里购物，能保证我的系统安全吗"
+            android:textSize="17.0sp"/>
+    </LinearLayout>
+
+    <!--<include
+        android:id="@id/bottomBar"
+        layout="@layout/activity_main"/>-->
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+     @ViewInject(R.id.iv_product)
+    private ImageView mIv_product; // 商品图
+
+    @ViewInject(R.id.tv_product_title)
+    private TextView mTv_product_title; // 商品标题
+
+    @ViewInject(R.id.tv_product_num)
+    private TextView mTv_product_num; // 商品数量
+
+    @ViewInject(R.id.tv_product_size)
+    private TextView mTv_product_size; // 商品尺码
+
+    @ViewInject(R.id.tv_product_color)
+    private TextView mTv_product_color; // 商品颜色
+
+    @ViewInject(R.id.tv_product_price)
+    private TextView mTv_product_price; // 商品价格
+
+    @ViewInject(R.id.tv_product_xiaoji)
+    private TextView mTv_product_xiaoji; //商品小计
+
+    @ViewInject(R.id.tv_no_product_show_bar)
+    private TextView mTv_no_product_show_bar; // 无货商品显示头
+
+    x.view().inject();
+
+-->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_no_product_show_bar"
+        style="@style/product_attrib_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_long"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="已无货商品"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:paddingTop="14dp">
+
+
+            <ImageView
+                android:id="@+id/iv_product"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/about" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_product_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="商品标题"
+                    android:textSize="@dimen/title_textsize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/tv_gift"
+                            android:visibility="invisible"
+                            style="@style/product_attrib_text"
+                            android:text="买二送二（）内附赠品"
+                            android:textColor="@color/bg_title"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textClothesPrice"
+                            style="@style/product_attrib_text"
+                            android:text="颜色："
+                            android:textColor="@color/bg_title"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/textMarketPrice"
+                            style="@style/product_attrib_text"
+                            android:text="价格："
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textProductCommentNum"
+                        style="@style/product_attrib_text"
+                        android:text="评论："
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/open" />
+
+    </RelativeLayout>
+</LinearLayout>

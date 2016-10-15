@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/relTop"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/head_bg">
+
+    <TextView
+        android:id="@+id/back"
+        style="@style/style_15_EBEBEB_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_fanhui"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@id/title"
+        style="@style/style_18_BEBEBE_BOLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+</RelativeLayout>
+

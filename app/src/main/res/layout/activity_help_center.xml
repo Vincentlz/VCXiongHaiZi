@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/head_bg" >
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/style_15_EBEBEB_BOLD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_fanhui"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="帮助中心"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_textsize" />
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listview"
+        />
+
+    <Button
+        android:id="@+id/bt_cus_tel"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_long"
+        android:text="客服电话:0371-66666666"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textSize="16dp" />
+
+
+
+ <!--   <include
+        android:id="@id/bottomBar"
+        layout="@layout/activity_main"/>-->
+</LinearLayout>

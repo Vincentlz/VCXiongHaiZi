@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="bg_title">#ff0000</color>
+    <color name="bg_corners">#19000000</color>
+    <color name="black">#000000</color>
+    <color name="home_item">#ffd90000</color>
+    <color name="home_item_selector">#ffc9c9c9</color>
+    <color name="home_item_normal">#fff2f2f2</color>
+    <color name="darkgray">#ff808080</color>
+    <color name="home_black">#2D2F2E</color>
+</resources>

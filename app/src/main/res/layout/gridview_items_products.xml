@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/border_80"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/isnew"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="三鹿"
+        android:layout_below="@id/imgIcon"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="价格:"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/darkgray"
+        android:textSize="18sp"
+        android:layout_alignLeft="@id/imgIcon"
+        />
+    <TextView
+        android:id="@+id/tv_price2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥58"
+        android:layout_toRightOf="@id/tv_price"
+        android:layout_below="@id/tv_name"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#ff0000"
+        />
+</RelativeLayout>

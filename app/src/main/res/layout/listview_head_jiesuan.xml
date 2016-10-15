@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--收获人-->
+        <RelativeLayout
+            android:id="@+id/rl_reap"
+            style="@style/Default."
+            android:background="@drawable/bg_shape_corners"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/AppBaseTheme."
+                android:padding="2dp"
+                android:text="收货人信息"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_reap"
+                style="@style/AppBaseTheme."
+                android:layout_below="@+id/tv1"
+                android:hint="可选择"
+                android:padding="2dp"
+                android:textColor="#7B7B7B"
+                android:textSize="12sp" />
+
+            <ImageView
+                style="@style/MGallery."
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_right"
+                android:focusable="false" />
+
+        </RelativeLayout>
+        <!--支付方式-->
+        <RelativeLayout
+            android:id="@+id/rl_pay"
+            style="@style/Default."
+            android:background="@drawable/bg_shape_corners">
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/AppBaseTheme."
+                android:padding="2dp"
+                android:text="支付方式"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_pay"
+                style="@style/AppBaseTheme."
+                android:layout_below="@id/tv2"
+                android:hint="可选择"
+                android:padding="2dp"
+                android:textColor="#7B7B7B"
+                android:textSize="12sp" />
+
+            <ImageView
+                style="@style/MGallery."
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_right"
+                android:focusable="false" />
+        </RelativeLayout>
+        <!--送货时间-->
+        <RelativeLayout
+            android:id="@+id/rl_goods"
+            style="@style/Default."
+            android:background="@drawable/bg_shape_corners">
+
+            <TextView
+                android:id="@+id/tv3"
+                style="@style/AppBaseTheme."
+                android:padding="2dp"
+                android:text="送货时间"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_send_time"
+                style="@style/AppBaseTheme."
+                android:layout_below="@id/tv3"
+                android:hint="可选择"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="#7B7B7B"
+                android:textSize="12sp" />
+
+            <ImageView
+                style="@style/MGallery."
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_right"
+                android:focusable="false" />
+        </RelativeLayout>
+        <!--支付方式-->
+        <RelativeLayout
+            android:id="@+id/rl_goods_way"
+            style="@style/Default."
+            android:background="@drawable/bg_shape_corners">
+
+            <TextView
+                android:id="@+id/tv4"
+                style="@style/AppBaseTheme."
+                android:padding="2dp"
+                android:text="送货方式:"
+                android:textSize="15sp" />
+
+            <TextView
+                style="@style/AppBaseTheme."
+                android:layout_below="@+id/tv4"
+                android:padding="2dp"
+                android:text="快递"
+                android:textColor="#7B7B7B"
+                android:textSize="12sp" />
+
+            <ImageView
+                style="@style/MGallery."
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_right"
+                android:focusable="false" />
+        </RelativeLayout>
+        <!--使用优惠券-->
+        <RelativeLayout
+            android:id="@+id/rl_preferential"
+            style="@style/Default."
+            android:background="@drawable/bg_shape_corners">
+
+            <TextView
+                android:id="@+id/tv5"
+                style="@style/AppBaseTheme."
+                android:padding="2dp"
+                android:text="使用优惠券:"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_less"
+                style="@style/AppBaseTheme."
+                android:layout_below="@id/tv5"
+                android:padding="2dp"
+                android:textColor="#7B7B7B"
+                android:hint="可选择"
+                android:textSize="12sp" />
+
+            <ImageView
+                style="@style/MGallery."
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_right"
+                android:focusable="false" />
+        </RelativeLayout>
+        <!--索取发票-->
+        <RelativeLayout
+            android:id="@+id/rl_receipt"
+            style="@style/Default."
+            android:background="@drawable/bg_shape_corners">
+
+            <TextView
+                android:id="@+id/tv6"
+                style="@style/AppBaseTheme."
+                android:padding="2dp"
+                android:text="索取发票"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_index"
+                style="@style/AppBaseTheme."
+                android:layout_below="@id/tv6"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:hint="可选择"
+                android:textColor="#7B7B7B"
+                android:textSize="12sp" />
+
+            <ImageView
+                style="@style/MGallery."
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/arrow_right"
+                android:focusable="false" />
+        </RelativeLayout>
+        <!--商品详细-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            android:background="@color/bg_corners">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="商品详细"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

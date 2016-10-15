@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="hai.xiong.redchilden">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="hai.xiong.redchilden.activity.SplshActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.MainActivity" android:windowSoftInputMode="adjustNothing">
+
+        </activity>
+        <activity android:name=".activity.ProductListActivity"></activity>
+        <activity android:name=".activity.Payment_Center_Activity"></activity>
+        <activity android:name=".activity.AddressListActivity">
+
+        </activity>
+        <activity android:name=".activity.Level2Activity"></activity>
+        <activity android:name=".activity.Level3Activity"></activity>
+        <activity android:name=".activity.Pay_Way_Activity"></activity>
+        <activity android:name=".activity.AccountCenterActivity"></activity>
+        <activity android:name=".activity.HelpCenterActivity"></activity>
+        <activity android:name=".activity.FaveriteActivity"></activity>
+        <activity android:name=".activity.AboutActivity"></activity>
+        <activity android:name=".activity.FadeBackActivity"></activity>
+        <activity android:name=".activity.ProductDetailsActivity"></activity>
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.RegisterActivity"/>
+        <activity android:name="hai.xiong.redchilden.activity.LimitTimeActivity"></activity>
+        <activity android:name=".activity.SearchResultActivity"/>
+        <activity android:name="hai.xiong.redchilden.activity.CuXiao"></activity>
+        <activity android:name=".activity.CommentActivity"></activity>
+        <activity android:name=".activity.AddressModifyActivity"></activity>
+
+        <activity android:name=".activity.AddAddressActivity"/>
+        <activity android:name="hai.xiong.redchilden.activity.BrandActivity"></activity>
+        <activity android:name=".activity.Send_Time_Activity"></activity>
+        <activity android:name=".activity.Pay_Less_Activity"></activity>
+        <activity android:name=".activity.Write_Message_Activity"></activity>
+        <activity android:name=".activity.SearchResultActivity" />
+        <activity android:name=".activity.Submit_Success_Activity"></activity>
+        <activity android:name="hai.xiong.redchilden.HotSingle"></activity>
+        <activity android:name=".activity.MyOrderActivity"/>
+        <activity android:name=".activity.HelpContentActivity"/>
+        <activity android:name=".activity.ScanHistoryActivity"/>
+        <activity android:name=".activity.WuliuSearchActivity"></activity>
+        <activity android:name=".activity.MyOrderActivity" />
+        <activity android:name=".activity.HelpContentActivity" />
+        <activity android:name=".activity.ScanHistoryActivity" />
+        <activity android:name=".activity.OrderDetailActivity"/>
+        <activity android:name=".activity.FilterActivity"></activity>
+        <activity android:name=".activity.FilterListAcitivity"></activity>
+        <activity android:name=".activity.Spinner_Address_Activity"></activity>
+        <activity android:name=".activity.Payment1_Center_Activity"></activity>
+    </application>
+
+</manifest>
